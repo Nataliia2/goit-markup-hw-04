@@ -133,6 +133,13 @@ a {
 .contacts a:hover,
 .contacts a:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.mail {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 /*страница студии*/
@@ -153,6 +160,15 @@ h1 {
   padding-bottom: 200px;
 
   background-color: var(--background-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../img/фон.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
 
   text-align: center;
 }
@@ -205,6 +221,13 @@ h1 {
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.vector {
+  width: 270px;
+  height: 120;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
 }
 
 .features-text {
@@ -285,6 +308,61 @@ h2 {
   line-height: 1.19;
 }
 
+.social-command {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.social-command .link-size + .link-size {
+  padding-left: 10px;
+}
+
+.social {
+  padding: 0;
+  border: none;
+  display: block;
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  border-radius: 50%;
+}
+
+.social:hover,
+.social:focus {
+  fill: var(--white-text);
+  background-color: var(--accent-color);
+}
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-list .clients-li + .clients-li {
+  margin-left: 30px;
+}
+
+.clients-logo {
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.clients-logo:hover,
+.clients-logo:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
 /* Футер */
 
 .footer {
@@ -292,6 +370,14 @@ h2 {
   padding-bottom: 60px;
 
   background-color: var(--background-color);
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-section {
+  margin-right: 70px;
 }
 
 .logo-accent-footer {
@@ -327,6 +413,42 @@ h2 {
 
 .mail {
   margin-bottom: 9px;
+}
+
+.footer-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-footer {
+  padding: 0;
+  border: none;
+  display: block;
+  width: 44px;
+  height: 44px;
+  fill: var(--white-text);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-footer:hover,
+.social-footer:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-list .footer-li + .footer-li {
+  padding-left: 10px;
 }
 
 /* Портфолио*/
